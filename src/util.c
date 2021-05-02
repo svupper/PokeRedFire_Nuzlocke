@@ -123,13 +123,13 @@ void HealMon(struct Pokemon* mon)
 	u16 maxHP = GetMonData(mon, MON_DATA_MAX_HP, NULL);
 
 	//Restore HP.
-	SetMonData(mon, MON_DATA_HP, &maxHP);
-
+	//SetMonData(mon, MON_DATA_HP, &maxHP);
+	//svu
 	//Restore PP.
 	MonRestorePP(mon);
 
 	//Restore Status.
-	SetMonData(mon, MON_DATA_STATUS, &none);
+	//SetMonData(mon, MON_DATA_STATUS, &none);
 }
 
 void SetMonPokedexFlags(struct Pokemon* mon)
